@@ -44,6 +44,10 @@ body{
   padding-bottom: 94px;
 }
 
+.section.features{
+  padding-bottom: 0;
+}
+
                                       /*  Header*/
 
 
