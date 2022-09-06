@@ -387,11 +387,14 @@ text-align: center;
 .project{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .project .project-link{
   margin-bottom: 30px;
+}
+
+.project .project-link:nth-last-child(-n+3){
+  margin-bottom: 0;
 }
 
 .project .project-link:not(:nth-child(3n+3)){
