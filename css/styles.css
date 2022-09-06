@@ -55,29 +55,44 @@ p{
   padding-bottom: 94px;
 }
 
+.section.hero{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .section.features{
   padding-bottom: 0;
 }
 
                                       /*  Header*/
 
+.flex-container{
+  display: flex;
+  align-items: center;
+}
 
 .page-header {
   background-color: var(--nav-color);
   border-bottom: 1px solid var(--border-color);
 }
 
+
 .logo {
-    color: var(--logo-color);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
+  color: var(--logo-color);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
   }
 
 .slogan {
   color: var(--black-color);
+}
+
+.site-nav{
+  display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .link:hover,
@@ -85,7 +100,17 @@ p{
   color: var(--logo-color);
 }
 
+.site-nav .item-list:not(:last-child){
+  margin-right: 50px;
+}
+
+
 .link-ttl {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+
   color: var(--logo-color);
   text-decoration: none;
   font-size: 14px;
@@ -94,11 +119,24 @@ p{
 }
 
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-font-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.14; 
+}
+
+.auth-nav{
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item-list:not(:last-child){
+  margin-right: 50px;
 }
 
 .auth-nav .copy:hover,
@@ -107,12 +145,15 @@ p{
 }
 
 .copy {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--second-font-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  ;
 }
 
                                    /* Hero */
@@ -133,7 +174,7 @@ text-align: center;
   text-transform: uppercase;
 
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -161,6 +202,10 @@ text-align: center;
 
 .visually-hidden {
   transform: scale(0);
+}
+
+.post{
+  display: flex;
 }
 
 .post-title {
