@@ -241,6 +241,18 @@ text-align: center;
   margin-bottom: 50px;
 }
 
+.label{
+  display: flex;
+}
+
+.label .label-link{
+  margin-right: 30px;
+}
+
+.label-link .benefits{
+  display: block;
+}
+
                                  /* Three Section */
 
 .team {
