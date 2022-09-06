@@ -13,6 +13,7 @@
 --second-font-color:#757575;
 
 --border-color:#ECECEC;
+--border-secondary-color:#EEEEEE;
 }
 
                                       /* Body */
@@ -348,6 +349,16 @@ text-align: center;
 
                                     /* Portfolio Section */
 
+ .column{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+ }  
+
+ .column .column-link:not(:last-child){
+   margin-right: 8px;
+ }
+
 .click {
   color: var(--main-font-color);
   background-color: var(--fsection-color);
@@ -373,6 +384,20 @@ text-align: center;
              0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project .project-link{
+  margin-bottom: 30px;
+}
+
+.project .project-link:not(:nth-child(3n+3)){
+  margin-right: 30px;
+}
+
 .project .visit {
   text-decoration: none;
 }
@@ -383,9 +408,7 @@ text-align: center;
   font-weight: 700;
   line-height: 2;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .project-list {
@@ -397,9 +420,18 @@ text-align: center;
   margin-bottom: 0;
   padding-bottom: 20px;
 }
+.description{
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid var(--border-secondary-color);
+  border-right: 1px solid var(--border-secondary-color);
+  border-left: 1px solid var(--border-secondary-color);
+}
+
 
 .image{
-  padding-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 
