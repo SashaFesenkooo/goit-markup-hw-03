@@ -62,7 +62,11 @@ p{
 }
 
 .section.features{
-  padding-bottom: 0;
+  padding-bottom: 47px;
+}
+
+.section.wrap{
+  padding-top: 47px;
 }
 
                                       /*  Header*/
